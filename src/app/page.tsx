@@ -302,7 +302,7 @@ export default function Portfolio() {
                               <h3 className="text-2xl font-semibold">
                                 {project.title}
                               </h3>
-                              <p className="text-sm text-muted-foreground mt-2 max-w-sm min-w-xs md:min-w-sm">
+                              <p className="text-sm text-muted-foreground mt-2 max-w-sm min-w-2xs md:min-w-sm">
                                 {project.detailDescription}
                               </p>
                               <div className="flex items-center gap-4 ">
