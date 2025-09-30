@@ -272,7 +272,7 @@ export default function Portfolio() {
                           alt={project.title}
                           className="aspect-video w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-xl"
                         />
-                        <div className=" w-full bg-gradient-to-b from-chart-2/5 to-chart-2/10  backdrop-blur-2xl px-2 py-3 rounded-md  shadow-2xl flex flex-col justify-center items-center overflow-y-auto scrollbar ">
+                        <div className=" w-full bg-gradient-to-b from-chart-2/5 to-chart-2/10  backdrop-blur-2xl px-2 py-3 rounded-b-md  shadow-2xl flex flex-col justify-center items-center overflow-y-auto scrollbar ">
                           <h3 className="text-2xl font-semibold ">
                             {project.title}
                           </h3>
