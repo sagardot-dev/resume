@@ -22,6 +22,7 @@ import { TypewriterText, TypewriterTextAnimate } from "@/components/ui/types";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { SpotlightCustomColor } from "@/components/spot-light";
+import { Button } from "@/components/ui/button";
 
 export default function Portfolio() {
   const router = useRouter();
@@ -185,15 +186,15 @@ export default function Portfolio() {
                   </span>
                 </div>
               </div>
-              <button
+              <Button
                 onClick={() => {
                   router.push("https://github.com/Gatuam");
                 }}
                 className="px-4 py-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-md transition-all duration-300 flex items-center gap-2 hover:-translate-y-0.5"
               >
                 <GithubIcon className="w-4 h-4" />
-                <p className=" text-sm ">View GitHub</p>
-              </button>
+                <p className=" text-sm ">GitHub</p>
+              </Button>
             </div>
           </div>
         </nav>
@@ -288,16 +289,16 @@ export default function Portfolio() {
 
                       <MorphingDialogContainer className=" !rounded-2xl md:p-5 p-2 ">
                         <div className=" ">
-                          <MorphingDialogContent className="relative py-8 md:p-6 bg-accent backdrop-blur-2xl rounded-2xl flex flex-col gap-y-4 justify-center items-center gap-x-3 ">
+                          <MorphingDialogContent className="relative py-8 md:p-6 p-5 bg-accent backdrop-blur-2xl rounded-2xl flex flex-col gap-y-4 justify-center items-center gap-x-3 ">
                             <MorphingDialogClose className="fixed right-1 top-3 rounded-full bg-white p-1">
                               <XIcon className="h-4 w-4 text-zinc-500" />
                             </MorphingDialogClose>
                             <MorphingDialogImage
                               src={project.image}
                               alt={project.title}
-                              className="rounded-md object-cover md:w-140 w-92 h-auto shadow-2xl"
+                              className="rounded-md object-cover md:w-140 w-89 h-auto shadow-2xl"
                             />
-                            <div className=" w-[95%] bg-gradient-to-b from-chart-1/5 to-chart-2/10  backdrop-blur-2xl px-4 py-6 rounded-xl  shadow-2xl flex flex-col gap-y-2 ">
+                            <div className=" w-full bg-gradient-to-b from-chart-1/5 to-chart-2/10  backdrop-blur-2xl px-4 py-6 rounded-xl  shadow-2xl flex flex-col gap-y-2 ">
                               <h3 className="text-2xl font-semibold">
                                 {project.title}
                               </h3>
