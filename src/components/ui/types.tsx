@@ -38,7 +38,7 @@ export function TypewriterText() {
   }, [currentIndex, isDeleting, wordIndex, words]);
 
   return (
-    <span className="text-4xl md:text-7xl font-bold text-chart-2 ml-2">
+    <span className="text-2xl md:text-7xl font-bold text-chart-2 ml-2">
       {text}
       <span className="animate-pulse">|</span>
     </span>
@@ -51,12 +51,13 @@ export function TypewriterTextAnimate() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
 
-  const words = [
-    "Analyzing your data with advanced AI algorithms...",
-    "Processing millions of connections in real-time...",
-    "Securing your information with quantum encryption...",
-    "Optimizing performance with machine learning...",
-  ];
+const words = [
+  "AI data analysis pipelines.",
+  "Real-time systems at scale.",
+  "End-to-end security protocols.",
+  "ML-driven performance optimization.",
+];
+
   const typingSpeed = 80;
   const deletingSpeed = 40;
   const pauseTime = 3000;

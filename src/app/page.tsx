@@ -180,7 +180,7 @@ export default function Portfolio() {
                     />
                   </div>
 
-                  <span className="font-semibold text-foreground">
+                  <span className="font-semibold text-foreground text-sm">
                     SAGAR GAUTHAM
                   </span>
                 </div>
@@ -192,7 +192,7 @@ export default function Portfolio() {
                 className="px-4 py-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-md transition-all duration-300 flex items-center gap-2 hover:-translate-y-0.5"
               >
                 <GithubIcon className="w-4 h-4" />
-                View GitHub
+                <p className=" text-sm ">View GitHub</p>
               </button>
             </div>
           </div>
@@ -202,16 +202,16 @@ export default function Portfolio() {
         <section className="py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="animate-fade-in-up w-full flex-col flex justify-center items-center text-center">
-              <h1 className="text-4xl md:text-7xl font-bold mb-6 text-foreground leading-tight max-w-5xl">
+              <h1 className="text-3xl md:text-7xl font-bold mb-6 text-foreground leading-tight max-w-5xl">
                 A software engineer who writes
                 <TypewriterText />
               </h1>
-              <p className="text-lg text-muted-foreground max-w-4xl leading-relaxed mb-6">
+              <p className="text-sm md:text-lg text-muted-foreground max-w-4xl leading-relaxed mb-6">
                 I'm EK Gautham, a software engineer who writes less code than
                 most think—but makes every line count. Fueled by coffee and
                 curiosity, I turn complex problems into sleek, efficient apps.
               </p>
-              <div className="flex gap-2 text-muted-foreground flex-wrap">
+              <div className="flex gap-2 text-muted-foreground flex-wrap justify-center items-center mt-4">
                 <span>Building</span>
                 <a
                   href="https://replit-ai-ecru.vercel.app"
@@ -233,7 +233,7 @@ export default function Portfolio() {
         </section>
 
         {/* Projects */}
-        <section className="py-10 px-4" id="projects">
+        <section className="py-4 md:py-10 px-4" id="projects">
           <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
             <div className=" flex flex-col  mb-8 justify-center items-center">
               <div className="relative inline-block border border-primary md:px-6 md:py-4 px-3 py-1 mb-3 ">
@@ -254,81 +254,79 @@ export default function Portfolio() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((project, index) => (
-                <div 
-                 key={project.id}
-                 className=" p-[0.5px] bg-gradient-to-b from-chart-2 to-chart-1 rounded-md"
+                <div
+                  key={project.id}
+                  className=" p-[0.5px] bg-gradient-to-b from-chart-2 to-chart-1 rounded-md"
                 >
-                    <div
-                 
-                  className="group relative overflow-hidden rounded-lg border border-border bg-card text-card-foreground hover:border-accent/50 cursor-pointer animate-scale-in glow-on-hover transition-all duration-500 hover:-translate-y-2 p-1.5"
-                  style={{ animationDelay: `${index * 150}ms` }}
-                >
-                  {/* Morphing Dialog Trigger */}
-                  <MorphingDialog
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                  <div
+                    className="group relative overflow-hidden rounded-lg border border-border bg-card text-card-foreground hover:border-accent/50 cursor-pointer animate-scale-in glow-on-hover transition-all duration-500 hover:-translate-y-2 p-1.5"
+                    style={{ animationDelay: `${index * 150}ms` }}
                   >
-                    <MorphingDialogTrigger className="p-2">
-                      <MorphingDialogImage
-                        src={project.image}
-                        alt={project.title}
-                        className="aspect-video w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-xl"
-                      />
-                      <div className=" w-full bg-gradient-to-b from-chart-2/5 to-chart-2/10  backdrop-blur-2xl px-2 py-3 rounded-md  shadow-2xl flex flex-col justify-center items-center overflow-y-auto scrollbar ">
-                        <h3 className="text-2xl font-semibold ">
-                          {project.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground mt-2">
-                          {project.description}
-                        </p>
-                        <div className="flex items-center gap-4 mt-4">
-                          <ExternalLink className="w-4 h-4" /> Live
-                          <Github className="w-4 h-4" /> Code
-                        </div>
-                      </div>
-                    </MorphingDialogTrigger>
-
-                    <MorphingDialogContainer className=" !rounded-2xl !bg-gradient-to-b from-chart-2 to-chart-1 p-5 ">
-                      <div className=" ">
-                        <MorphingDialogContent className="relative p-6 bg-accent backdrop-blur-2xl rounded-2xl flex flex-col gap-y-4 justify-center items-center gap-x-3 ">
-                          <MorphingDialogClose className="fixed right-1 top-3 rounded-full bg-white p-1">
-                            <XIcon className="h-4 w-4 text-zinc-500" />
-                          </MorphingDialogClose>
-                          <MorphingDialogImage
-                            src={project.image}
-                            alt={project.title}
-                            className="rounded-md object-cover w-140 h-auto shadow-2xl"
-                          />
-                          <div className=" w-full bg-gradient-to-b from-chart-1/5 to-chart-2/10  backdrop-blur-2xl px-4 py-6 rounded-xl  shadow-2xl flex flex-col gap-y-2 ">
-                            <h3 className="text-2xl font-semibold">
-                              {project.title}
-                            </h3>
-                            <p className="text-sm text-muted-foreground mt-2 max-w-sm min-w-sm">
-                              {project.detailDescription}
-                            </p>
-                            <div className="flex items-center gap-4 ">
-                              <a
-                                href={project.liveLink}
-                                target="_blank"
-                                className="hover:text-chart-2 flex items-center gap-1"
-                              >
-                                <ExternalLink className="w-4 h-4" /> Live
-                              </a>
-                              <a
-                                href={project.repoLink}
-                                target="_blank"
-                                className="hover:text-chart-2 flex items-center gap-1"
-                              >
-                                <Github className="w-4 h-4" /> Code
-                              </a>
-                            </div>
+                    {/* Morphing Dialog Trigger */}
+                    <MorphingDialog
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                    >
+                      <MorphingDialogTrigger className="p-2">
+                        <MorphingDialogImage
+                          src={project.image}
+                          alt={project.title}
+                          className="aspect-video w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500 rounded-t-xl"
+                        />
+                        <div className=" w-full bg-gradient-to-b from-chart-2/5 to-chart-2/10  backdrop-blur-2xl px-2 py-3 rounded-md  shadow-2xl flex flex-col justify-center items-center overflow-y-auto scrollbar ">
+                          <h3 className="text-2xl font-semibold ">
+                            {project.title}
+                          </h3>
+                          <p className="text-sm text-muted-foreground mt-2">
+                            {project.description}
+                          </p>
+                          <div className="flex items-center gap-4 mt-4">
+                            <ExternalLink className="w-4 h-4" /> Live
+                            <Github className="w-4 h-4" /> Code
                           </div>
-                        </MorphingDialogContent>
-                      </div>
-                    </MorphingDialogContainer>
-                  </MorphingDialog>
+                        </div>
+                      </MorphingDialogTrigger>
+
+                      <MorphingDialogContainer className=" !rounded-2xl md:p-5 p-2 ">
+                        <div className=" ">
+                          <MorphingDialogContent className="relative py-8 md:p-6 bg-accent backdrop-blur-2xl rounded-2xl flex flex-col gap-y-4 justify-center items-center gap-x-3 ">
+                            <MorphingDialogClose className="fixed right-1 top-3 rounded-full bg-white p-1">
+                              <XIcon className="h-4 w-4 text-zinc-500" />
+                            </MorphingDialogClose>
+                            <MorphingDialogImage
+                              src={project.image}
+                              alt={project.title}
+                              className="rounded-md object-cover md:w-140 w-92 h-auto shadow-2xl"
+                            />
+                            <div className=" w-[95%] bg-gradient-to-b from-chart-1/5 to-chart-2/10  backdrop-blur-2xl px-4 py-6 rounded-xl  shadow-2xl flex flex-col gap-y-2 ">
+                              <h3 className="text-2xl font-semibold">
+                                {project.title}
+                              </h3>
+                              <p className="text-sm text-muted-foreground mt-2 max-w-sm min-w-xs md:min-w-sm">
+                                {project.detailDescription}
+                              </p>
+                              <div className="flex items-center gap-4 ">
+                                <a
+                                  href={project.liveLink}
+                                  target="_blank"
+                                  className="hover:text-chart-2 flex items-center gap-1"
+                                >
+                                  <ExternalLink className="w-4 h-4" /> Live
+                                </a>
+                                <a
+                                  href={project.repoLink}
+                                  target="_blank"
+                                  className="hover:text-chart-2 flex items-center gap-1"
+                                >
+                                  <Github className="w-4 h-4" /> Code
+                                </a>
+                              </div>
+                            </div>
+                          </MorphingDialogContent>
+                        </div>
+                      </MorphingDialogContainer>
+                    </MorphingDialog>
+                  </div>
                 </div>
-                </div>
-                
               ))}
             </div>
           </div>

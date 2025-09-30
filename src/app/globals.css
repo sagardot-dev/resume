@@ -164,3 +164,7 @@ button {
 .scrollbars::-webkit-scrollbar {
   display: none; 
 }
+body {
+  cursor: url("/cursor.png") 16 16 !important;
+}
+
