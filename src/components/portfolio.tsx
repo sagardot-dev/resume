@@ -124,13 +124,7 @@ export default function Portfolio() {
         {/* Navigation */}
         <nav className="max-w-5xl mx-auto px-8 py-8 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <Image
-              className=" rounded-full"
-              src={"/sagar.enc"}
-              alt="sagar"
-              width={30}
-              height={30}
-            />
+            
             <span className="font-bold text-white text-lg">Sagar Gautham</span>
           </div>
 
@@ -345,13 +339,6 @@ export default function Portfolio() {
         <footer className="border-t border-zinc-800 py-12 max-w-5xl mx-auto px-8">
           <div className="flex flex-col items-center space-y-6">
             <div className="flex items-center space-x-3">
-              <Image
-              className=" rounded-full"
-              src={"/sagar.enc"}
-              alt="sagar"
-              width={30}
-              height={30}
-            />
               <span className="font-bold text-white text-xl">
                 Sagar Gautham
               </span>
