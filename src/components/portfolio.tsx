@@ -151,7 +151,7 @@ export default function Portfolio() {
 
           {/* Tech Stack Badges */}
           <div className="flex flex-wrap gap-2 mt-8">
-            {['Next.js', 'React', 'Node.js', 'TypeScript', 'PostgreSQL', 'MongoDB', 'Docker', 'tRPC', 'WebRTC'].map((tech) => (
+            {['Next.js', 'React', 'Node.js', 'TypeScript', 'PostgreSQL', 'MongoDB', 'Docker', 'tRPC', 'WebRTC', 'hono', 'AWS'].map((tech) => (
               <Badge key={tech} variant="secondary" className="bg-zinc-800 text-zinc-300 border-zinc-700">
                 {tech}
               </Badge>
