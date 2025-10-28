@@ -61,7 +61,7 @@ export default function Portfolio() {
       title: "Finance Tracker",
       description:
         "Personal finance management tool for tracking income, expenses, and overall financial data with analytics.",
-      link: "https://finance-banking-saas.vercel.app/transactions",
+      link: "https://finance-banking-saas-ten.vercel.app",
       tags: ["Next.js", "SaaS", "Finance", "Analytics"],
       category: "fullstack",
     },
@@ -165,7 +165,7 @@ export default function Portfolio() {
 
           <h1 className="font-bold text-5xl md:text-6xl text-zinc-50 max-w-3xl leading-tight">
             I'm a full-stack developer that rarely{" "}
-            <span className="text-blue-300">sleeps.</span>
+            <span className="text-blue-400">sleeps.</span>
           </h1>
 
           <p className="text-zinc-400 text-base max-w-2xl mt-8 leading-loose">
