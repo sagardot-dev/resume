@@ -12,6 +12,7 @@ import {
   Terminal,
 } from "lucide-react";
 import Image from "next/image";
+import Footer from "./footer";
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("all");
@@ -336,50 +337,7 @@ export default function Portfolio() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t border-zinc-800 py-12 max-w-5xl mx-auto px-8">
-          <div className="flex flex-col items-center space-y-6">
-            <div className="flex items-center space-x-3">
-              <span className="font-bold text-white text-xl">
-                Sagar Gautham
-              </span>
-            </div>
-
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/Gatuam"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-900 transition-all"
-              >
-                <Github className="w-5 h-5 text-zinc-400 hover:text-white transition-colors" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ek-gautham-b24725310/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-900 transition-all"
-              >
-                <Linkedin className="w-5 h-5 text-zinc-400 hover:text-white transition-colors" />
-              </a>
-              <a
-                href="mailto:sagardotdev@gmail.com"
-                className="p-3 rounded-lg border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-900 transition-all"
-              >
-                <Mail className="w-5 h-5 text-zinc-400 hover:text-white transition-colors" />
-              </a>
-            </div>
-
-            <p className="text-zinc-500 text-sm text-center">
-              © 2025 Sagar Gautham. Full-Stack Developer.
-            </p>
-
-            <div className="flex items-center space-x-2 text-zinc-600 text-xs">
-              <span>📱 +66 94 746 1393</span>
-              <span>•</span>
-              <span>📧 sagardotdev@gmail.com</span>
-            </div>
-          </div>
-        </footer>
+       <Footer/>
       </div>
     </div>
   );
