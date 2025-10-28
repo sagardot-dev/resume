@@ -164,7 +164,7 @@ export default function Portfolio() {
             Available for Freelance
           </Badge>
 
-          <h1 className="font-bold text-5xl md:text-6xl text-zinc-50 max-w-3xl leading-tight">
+          <h1 className="font-bold text-3xl md:text-6xl text-zinc-50 max-w-3xl leading-tight ">
             I'm a full-stack developer that rarely{" "}
             <span className="text-blue-400">sleeps.</span>
           </h1>

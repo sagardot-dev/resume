@@ -46,7 +46,7 @@ export default function Footer() {
         <span style={{ color: "var(--fg)" }}>touch</span>
       </h2>
 
-      <div className="relative mt-4 min-w-md max-w-lg">
+      <div className="relative mt-4 md:min-w-md max-w-lg ">
         <Input
           type="email"
           placeholder="Your email "
@@ -69,48 +69,51 @@ export default function Footer() {
         or want to say hi, hit that button.
       </p>
 
-     <div className="overflow-hidden relative my-8">
-  <div
-    className="flex animate-marquee gap-4 whitespace-nowrap"
-    style={{ "--marquee-duration": "40s" } as React.CSSProperties}
-  >
-    <div className="flex gap-4 w-max">
-      {techStack.map((tech) => (
-        <Badge
-          key={tech}
-          variant="secondary"
-          className="bg-zinc-800 text-zinc-300 border-zinc-700"
+      <div className="overflow-hidden relative my-8">
+        <div
+          className="flex animate-marquee gap-4 whitespace-nowrap"
+          style={{ "--marquee-duration": "40s" } as React.CSSProperties}
         >
-          {tech}
-        </Badge>
-      ))}
-    </div>
-    <div className="flex gap-4 w-max">
-      {techStack.map((tech) => (
-        <Badge
-          key={`${tech}-2`}
-          variant="secondary"
-          className="bg-zinc-800 text-zinc-300 border-zinc-700"
-        >
-          {tech}
-        </Badge>
-      ))}
-    </div>
-  </div>
+          <div className="flex gap-4 w-max">
+            {techStack.map((tech) => (
+              <Badge
+                key={tech}
+                variant="secondary"
+                className="bg-zinc-800 text-zinc-300 border-zinc-700"
+              >
+                {tech}
+              </Badge>
+            ))}
+          </div>
+          <div className="flex gap-4 w-max">
+            {techStack.map((tech) => (
+              <Badge
+                key={`${tech}-2`}
+                variant="secondary"
+                className="bg-zinc-800 text-zinc-300 border-zinc-700"
+              >
+                {tech}
+              </Badge>
+            ))}
+          </div>
+        </div>
 
-  <style jsx>{`
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .animate-marquee {
-      display: flex;
-      width: max-content;
-      animation: marquee var(--marquee-duration) linear infinite;
-    }
-  `}</style>
-</div>
-
+        <style jsx>{`
+          @keyframes marquee {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee var(--marquee-duration) linear infinite;
+          }
+        `}</style>
+      </div>
     </div>
   );
 }
