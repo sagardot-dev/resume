@@ -114,7 +114,7 @@ const DeveloperFeatures = () => {
       <div className="max-w-7xl px-4 md:px-8 mx-auto">
         {/* Section Header */}
         <div className="mb-16 px-6">
-          <h2 className="text-4xl font-bold text-white mb-4 text-center">What I Build</h2>
+          <h2 className="text-4xl font-bold text-white mb-4 text-center">What I Used?</h2>
           <p className="text-neutral-400 text-lg max-w-2xl text-center mx-auto">
             Full-stack applications with modern technologies and scalable
             architecture

@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export const techStacks = [
   "Next.js",
@@ -68,6 +69,13 @@ export default function Footer() {
         I'm currently looking for new opportunities. Whether you have a question
         or want to say hi, hit that button.
       </p>
+      <Image
+        src={"/sagar.jpeg"}
+        alt="sagar"
+        width={50}
+        height={50}
+        className=" rounded-full"
+      />
     </div>
   );
 }
