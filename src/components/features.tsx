@@ -87,7 +87,7 @@ const DeveloperFeatures = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-32 relative overflow-hidden ">
+    <section className="py-20 lg:py-25 relative overflow-hidden ">
       <style>{`
         @keyframes slideIn {
           from {
@@ -123,7 +123,7 @@ const DeveloperFeatures = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2  border-neutral-800 border bg-zinc-900 p-2 rounded-xl">
           {/* Recent Projects Activity */}
-          <div className="border-b md:border-b-0  border-neutral-800 md:border-r">
+          <div className="border-b md:border-b  border-neutral-800 md:border-r pb-5">
             <div className="p-4 md:p-8">
               <h2 className="text-lg font-bold text-neutral-200">
                 Recent Projects
@@ -190,7 +190,7 @@ const DeveloperFeatures = () => {
           </div>
 
           {/* Tech Stack Grid */}
-          <div className="border-b md:border-b-0 border-neutral-800">
+          <div className="border-b md:border-b border-neutral-800 ">
             <div className="p-4 md:p-8">
               <h2 className="text-lg font-bold text-neutral-200">Tech Stack</h2>
               <p className="text-neutral-400 mt-2 max-w-md">
@@ -234,7 +234,7 @@ const DeveloperFeatures = () => {
           </div>
 
           {/* Architecture Approach */}
-          <div className="md:border-r border-neutral-800 pb-4 w-full border-b md:border-b-0 ">
+          <div className="md:border-r border-neutral-800  w-full border-b md:border-b-0 pb-6 ">
             <div className="px-3 py-2 md:px-8 md:py-2 mt-6">
               <h2 className="text-lg font-bold text-neutral-200">
                 Architecture
