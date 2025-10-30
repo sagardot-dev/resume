@@ -121,7 +121,7 @@ const DeveloperFeatures = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2  border-neutral-800 border bg-zinc-900 p-2 rounded-md">
+        <div className="grid grid-cols-1 md:grid-cols-2  border-neutral-800 border bg-zinc-900 p-2 rounded-xl">
           {/* Recent Projects Activity */}
           <div className="border-b md:border-b-0  border-neutral-800 md:border-r">
             <div className="p-4 md:p-8">
