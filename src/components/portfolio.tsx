@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Footer from "./footer";
+import DeveloperFeatures from "./features";
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("all");
@@ -107,7 +108,7 @@ export default function Portfolio() {
       : projects.filter((p) => p.category === activeTab);
 
   return (
-    <div className="min-h-screen bg-zinc-900 antialiased">
+    <div className="min-h-screen bg-zinc-900 antialiased overflow-x-hidden">
       <style>{`
         @keyframes meteor {
           0% { transform: translateY(0) translateX(0); opacity: 1; }
@@ -335,6 +336,9 @@ export default function Portfolio() {
             ))}
           </div>
         </section>
+        <>
+          <DeveloperFeatures/>
+        </>
 
         {/* Footer */}
        <Footer/>
