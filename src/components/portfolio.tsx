@@ -76,14 +76,6 @@ export default function Portfolio() {
       category: "ai",
     },
     {
-      title: "Bolt.clone",
-      description:
-        "Bolt.new clone  — react.js frontend with Sandpack live-edit IDE, Anthropics LLm API for AI features, Node.js backend for auth/real-time flows.",
-      link: "https://bolt-clone-inky.vercel.app/",
-      tags: ["react.js", "Node.js", "Anthropic API", "Sandpack", "SaaS"],
-      category: "fullstack",
-    },
-    {
       title: "Real-time Chat App",
       description:
         "Full-stack real-time messaging app built with React, Next.js, and WebSocket — features live chat, user presence, and instant message delivery, deployed on Vercel.",
