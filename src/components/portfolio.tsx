@@ -72,7 +72,7 @@ export default function Portfolio() {
       description:
         "Public chat platform where all messages are visible to everyone, integrated with AI for smart suggestions.",
       link: "https://public-massage-app.vercel.app/",
-      tags: ["AI", "Chat", "Real-time", "Public"],
+      tags: ["AI", "Chat", "Real-time", "Public","Ract table", "next js", "next auth"],
       category: "ai",
     },
     {
