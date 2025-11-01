@@ -284,14 +284,14 @@ const DeveloperFeatures = () => {
 
           {/* Skills & Expertise */}
           <div>
-            <div className="p-4 md:p-8">
+            <div className="p-4 md:p-8 pt-6  ">
               <h2 className="text-lg font-bold text-neutral-200">Expertise</h2>
               <p className="text-neutral-400 mt-2 max-w-md">
                 Core competencies in modern web development and software
                 engineering.
               </p>
             </div>
-            <div className="relative h-80 overflow-hidden">
+            <div className="relative">
               <div className="p-4">
                 <div className="flex gap-2 flex-wrap mb-6">
                   {skills.map((skill, i) => (
