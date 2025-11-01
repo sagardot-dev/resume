@@ -52,7 +52,7 @@ export default function Portfolio() {
       category: "fullstack",
     },
     {
-      title: "Real-Time Chat Application",
+      title: "Real-Time Chat Interface",
       description:
         "Group chat system built with WebSockets for live communication with typing indicators and presence.",
       link: "https://websocket-chat-delta.vercel.app/",
@@ -74,6 +74,22 @@ export default function Portfolio() {
       link: "https://public-massage-app.vercel.app/",
       tags: ["AI", "Chat", "Real-time", "Public"],
       category: "ai",
+    },
+    {
+      title: "Bolt.clone",
+      description:
+        "Bolt.new clone  — react.js frontend with Sandpack live-edit IDE, Anthropics LLm API for AI features, Node.js backend for auth/real-time flows.",
+      link: "https://bolt-clone-inky.vercel.app/",
+      tags: ["react.js", "Node.js", "Anthropic API", "Sandpack", "SaaS"],
+      category: "fullstack",
+    },
+    {
+      title: "Real-time Chat App",
+      description:
+        "Full-stack real-time messaging app built with React, Next.js, and WebSocket — features live chat, user presence, and instant message delivery, deployed on Vercel.",
+      link: "https://real-time-chat-app-fawn.vercel.app/",
+      tags: ["Next.js", "React", "WebSocket", "Fullstack", "Real-time"],
+      category: "fullstack",
     },
   ];
 
@@ -126,7 +142,6 @@ export default function Portfolio() {
         {/* Navigation */}
         <nav className="max-w-5xl mx-auto px-8 py-8 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            
             <span className="font-bold text-white text-lg">Sagar Gautham</span>
           </div>
 
@@ -337,11 +352,11 @@ export default function Portfolio() {
           </div>
         </section>
         <>
-          <DeveloperFeatures/>
+          <DeveloperFeatures />
         </>
 
         {/* Footer */}
-       <Footer/>
+        <Footer />
       </div>
     </div>
   );
