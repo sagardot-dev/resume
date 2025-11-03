@@ -23,7 +23,7 @@ export default function Portfolio() {
       title: "Loveable Clone",
       description:
         "AI-powered code generator using Anthropic LLM API and E2B Sandbox for live code rendering with real-time preview.",
-      link: "https://replit-ai-ecru.vercel.app/",
+      link: "https://loveable-ai-one.vercel.app",
       tags: ["Next.js", "Anthropic API", "E2B Sandbox", "AI"],
       category: "ai",
     },
@@ -128,7 +128,7 @@ export default function Portfolio() {
       `}</style>
 
       {/* Background Grid */}
-      <div className="fixed inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+      <div className="fixed inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-50" />
 
       <div className="relative">
         {/* Navigation */}
