@@ -14,11 +14,27 @@ import {
 import Image from "next/image";
 import Footer from "./footer";
 import DeveloperFeatures from "./features";
+import Link from "next/link";
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("all");
 
   const projects = [
+    {
+      title: "D-ivoice App",
+      description:
+        "Tailor invoice and payment tracking app — manage invoices, track income and expenses, and monitor payment status, built with Next.js and deployed on Vercel.",
+      link: "https://invoice-platform-jade.vercel.app/",
+      tags: [
+        "Next.js",
+        "React",
+        "Invoices",
+        "Payments",
+        "Expense Tracking",
+        "Fullstack",
+      ],
+      category: "fullstack",
+    },
     {
       title: "Loveable Clone",
       description:
@@ -26,6 +42,14 @@ export default function Portfolio() {
       link: "https://loveable-ai-one.vercel.app",
       tags: ["Next.js", "Anthropic API", "E2B Sandbox", "AI"],
       category: "ai",
+    },
+    {
+      title: "Finance Tracker",
+      description:
+        "Personal finance management tool for tracking income, expenses, and overall financial data with analytics.",
+      link: "https://finance-banking-saas-ten.vercel.app",
+      tags: ["Next.js", "SaaS", "Finance", "Analytics"],
+      category: "fullstack",
     },
     {
       title: "Complete Auth Application",
@@ -59,37 +83,13 @@ export default function Portfolio() {
       tags: ["WebSocket", "Real-time", "Chat", "Node.js"],
       category: "realtime",
     },
-    {
-      title: "Finance Tracker",
-      description:
-        "Personal finance management tool for tracking income, expenses, and overall financial data with analytics.",
-      link: "https://finance-banking-saas-ten.vercel.app",
-      tags: ["Next.js", "SaaS", "Finance", "Analytics"],
-      category: "fullstack",
-    },
-    {
-      title: "Public Messaging App",
-      description:
-        "Public chat platform where all messages are visible to everyone, integrated with AI for smart suggestions.",
-      link: "https://public-massage-app.vercel.app/",
-      tags: ["AI", "Chat", "Real-time", "Public","Ract table", "next js", "next auth"],
-      category: "ai",
-    },
-    {
-      title: "Real-time Chat App",
-      description:
-        "Full-stack real-time messaging app built with React, Next.js, and WebSocket — features live chat, user presence, and instant message delivery, deployed on Vercel.",
-      link: "https://real-time-chat-app-fawn.vercel.app/",
-      tags: ["Next.js", "React", "WebSocket", "Fullstack", "Real-time"],
-      category: "fullstack",
-    },
   ];
 
   const experiences = [
     {
-      company: "Emporium Armani",
+      company: "Armani",
       role: "Full-Stack Developer & Marketer",
-      period: "Jan 2021 - May 2025",
+      period: "Jan 2022 - May 2024",
       logo: "💎",
       points: [
         "Built and managed full-scale e-commerce using WooCommerce",
@@ -169,12 +169,12 @@ export default function Portfolio() {
         {/* Hero Section */}
         <section className="max-w-5xl mx-auto px-8 pt-20 pb-40">
           <Badge className="bg-blue-500/10 text-blue-400 border-blue-500/20 px-4 py-1 mb-6">
-            Available for Freelance
+            Available for Collabrate
           </Badge>
 
           <h1 className="font-bold text-3xl md:text-6xl text-zinc-50 max-w-3xl leading-tight ">
             I'm a full-stack developer that rarely{" "}
-            <span className="text-blue-400">sleeps.</span>
+            <span className="text-blue-300 animate-pulse">sleeps.</span>
           </h1>
 
           <p className="text-zinc-400 text-base max-w-2xl mt-8 leading-loose">
@@ -184,10 +184,18 @@ export default function Portfolio() {
           </p>
 
           <div className="mt-8 text-zinc-400 text-base max-w-2xl leading-loose">
-            Currently building innovative solutions with{" "}
-            <span className="text-zinc-200 font-bold">Next.js</span>,{" "}
-            <span className="text-zinc-200 font-bold">tRPC</span>, and{" "}
-            <span className="text-zinc-200 font-bold">AI integration</span>.
+            Currently building innovative solutions{" "}
+            <span className="text-emerald-400 font-bold">
+              <Link href={"https://invoice-platform-jade.vercel.app"}>
+                D-invoice app
+              </Link>
+            </span>
+            , <span className="text-zinc-200 font-bold"></span> and{" "}
+            <span className="text-emerald-300 font-bold">
+              <Link href={"https://github.com/Gatuam/link-flow-n8n-clone"}>
+                n8n Clone
+              </Link>
+            </span>
           </div>
 
           {/* Tech Stack Badges */}
@@ -346,7 +354,7 @@ export default function Portfolio() {
         <>
           <DeveloperFeatures />
         </>
-
+        
         {/* Footer */}
         <Footer />
       </div>

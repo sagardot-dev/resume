@@ -2,6 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import Link from "next/link";
 
 export const techStacks = [
   "Next.js",
@@ -25,6 +26,7 @@ export default function Footer() {
   return (
     <div className="my-4 px-4 py-6 pb-28 max-w-5xl mx-auto flex flex-col justify-center items-center mask-b-to-95%">
       <h2 className="relative mt-4 w-fit max-w-lg text-sm font-normal md:text-base mb-4 border p-2 px-6">
+        <Link className=" z-10 cursor-pointer" href={"https://github.com/Gatuam"}>
         <div
           className="absolute inset-0 h-full w-full scale-[1.04] rounded"
           style={{ backgroundColor: "var(--bg-card)" }}
@@ -42,9 +44,10 @@ export default function Footer() {
             />
           ))}
         </div>
-        <span style={{ color: "var(--fg)" }}>Get&nbsp;</span>
-        <span style={{ color: "var(--fg)" }}>in&nbsp;</span>
-        <span style={{ color: "var(--fg)" }}>touch</span>
+        
+          <span className=" cursor-pointer" style={{ color: "var(--fg)" }}>Git</span>
+          <span style={{ color: "var(--fg)" }}>hub&nbsp;</span>
+        </Link>
       </h2>
 
       <div className="relative mt-4 md:min-w-md max-w-lg ">

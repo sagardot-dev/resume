@@ -138,7 +138,7 @@ body {
 }
 
 ::selection {
-  background-color: #000fb5;
+  background-color: #009ab5;
   color: white;
 }
 
@@ -164,7 +164,5 @@ button {
 .scrollbars::-webkit-scrollbar {
   display: none; 
 }
-body {
-  cursor: url("/cursor.png") 16 16 !important;
-}
+
 
